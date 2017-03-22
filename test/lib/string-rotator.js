@@ -17,6 +17,16 @@ describe('rotator', function(){
     it('should handle zs', function(done){
       assert.equal(rotator.rotate("z"), "a");
       done();
-    })
+    });
+
+    it('should handle upper cases', function(done){
+      assert.equal(rotator.rotate("WTF"), "xug");
+      done();
+    });
+
+    it('should handle non alphanumeric characters', function(done){
+      assert.equal(rotator.rotate("WT F!!!!_&"), "xug");
+      done();
+    });
   });
 });
