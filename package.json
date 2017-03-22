@@ -1,0 +1,16 @@
+{
+  "name": "interview-string-thing",
+  "version": "1.0.0",
+  "description": "a problem for interviewees",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha $(find test -name '*.js')"
+  },
+  "author": "nicole",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0"
+  }
+}
